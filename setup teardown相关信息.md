@@ -1,1 +1,4 @@
-module是指作用于整个python文件
+setup_module和teardown_module是作用于整个python文件<br>
+setup_function和teardown_function作用于类外的函数开始与结束时<br>
+setup_class和teardown_class作用于类的开始和结束，如果一个类中有测试实例<br>
+setUp和tearDown作用于类中每个函数的开始与结束，但是是从unittest中继承的，并非pytest中的默认类函数,需要继承unittest.TestCase，即：class TestDemo(unittest.TestCase):
