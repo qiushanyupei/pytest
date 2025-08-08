@@ -1,0 +1,1 @@
+跳过：@pytest.mark.skip；要显示的话需要写参数reason,例：@pytest.mark.skip(reason = "代码未开发完成")
