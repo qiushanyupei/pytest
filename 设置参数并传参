@@ -1,0 +1,20 @@
+通过装饰器mark实现
+例：
+import pytest
+search_list = ['appium','selenium','pytest','fuck']
+
+@pytest.mark.parametrize('name',search_list)
+def test_search(name):
+    assert name in search_list
+注意点：装饰器的第一个字符串参数就是传进测试用例的参数,第二个变量参数是参数实体
+
+多参数例子：形参和实参要保证一一对应，使用列表嵌套元组的写法
+import pytest
+
+@pytest.mark.parametrize("test_input, expected", [
+    ("3+5", 8),
+    ("2+5", 7),
+    ("7+5", 1),
+])
+def test_mark_more(test_input,expected):
+    assert eval(test_input) == expected
