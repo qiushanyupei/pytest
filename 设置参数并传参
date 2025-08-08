@@ -18,3 +18,16 @@ import pytest
 ])
 def test_mark_more(test_input,expected):
     assert eval(test_input) == expected
+测试用例默认的命名是参数间用横杠分隔，例如：3+5-8；如果需要更优可读性，可以通过ids参数重定义
+例：
+@pytest.mark.parametrize("test_input, expected", [
+    ("3+5", 8),
+    ("2+5", 7),
+    ("7+5", 12),
+],ids = ["num1","num2","num3"])
+以笛卡尔积形式传入参数，例：（最终是9个测试用例）
+import pytest
+@pytest.mark.parametrize("wd",['appium','selenium','pytest'])
+@pytest.mark.parametrize("code",['utf-8','gbk','gb2312'])
+def test_dkej(wd,code):
+    print(f"wd:{wd} code:{code}")
