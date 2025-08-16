@@ -1,2 +1,6 @@
 跳过：@pytest.mark.skip；要显示的话需要写参数reason,例：@pytest.mark.skip(reason = "代码未开发完成")
 不用装饰器跳过的话，就在测试用例函数内pytest.skip("具体原因")
+条件判断决定是否跳过(skipif)：
+@pytest.mark.skipif(sys.platform == 'win32', reason='windows not support')
+def test_skipif():
+    print("hello")
