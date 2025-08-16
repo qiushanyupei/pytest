@@ -1,0 +1,3 @@
+pytest -vs main.py
+v可以使pass情况对应到case（输出pass的同时前面输出case名称），而不是只按顺序输出pass情况
+s可以使case内的输出不被隐藏
