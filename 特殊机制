@@ -1,0 +1,1 @@
+pytest.raises(expected_exception,match)参数1：需要匹配的错误类型；参数2：需要匹配的字符串或正则表达式
