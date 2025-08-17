@@ -4,3 +4,8 @@
 @pytest.mark.skipif(sys.platform == 'win32', reason='windows not support')
 def test_skipif():
     print("hello")
+xfail可以用来标记特殊的错误类型，通过会显示XPASS,不通过会显示XFAIL，实际上没啥用。例如：
+@pytest.mark.xfail(reason = "bug11")
+def test1():
+    print("test_xfail1方法执行")
+    assert 2==2
