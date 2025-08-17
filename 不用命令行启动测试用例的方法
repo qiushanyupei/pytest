@@ -1,0 +1,3 @@
+    pytest.main()
+    pytest.main(['test_mark1.py::test_dkej','-vs'])
+    pytest.main(['test_mark1.py','-vs','-m','dkef'])
