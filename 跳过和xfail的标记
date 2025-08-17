@@ -9,7 +9,7 @@ xfail可以用来标记特殊的错误类型，通过会显示XPASS,不通过会
 def test1():
     print("test_xfail1方法执行")
     assert 2==2
-类似skip，也可以在代码中调用，例如：
+类似skip，xfail也可以在代码中调用，但是会在调用时以XFAIL结束该测试用例，而不是像装饰器用法一样根据实际结果XPASS or XFAIL。例如：
 def test1():
     pytest.xfail(reason='该功能尚未完成')
     assert 2==2
