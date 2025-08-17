@@ -3,4 +3,4 @@
 --ff（failed first）:先运行出错的case，再执行其他的case
 <img width="479" height="173" alt="image" src="https://github.com/user-attachments/assets/b7792a7c-cb08-4af2-944f-c48eea837b15" /><br>
 -x可以和--maxfail结合使用<br>
--k后面是跟字符串，函数名包含了它就会执行
+-k后面是跟字符串，函数名包含了它就会执行,可以写成“not big”，会自动进行逻辑判断，执行不包含big的测试用例
