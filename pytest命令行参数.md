@@ -1,1 +1,2 @@
 -s:禁用输出捕获，show print output，即正常标准输出，所以才说是不捕获<br>
+--lf(last failed):只运行上次出错的case
