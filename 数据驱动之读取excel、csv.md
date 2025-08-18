@@ -7,3 +7,4 @@ class TestWithExcel:<br>
     def test_add(self,x,y,expected):<br>
         result = my_add(int(x),int(y))<br>
         assert result == int(expected)<br>
+<img width="806" height="327" alt="image" src="https://github.com/user-attachments/assets/ddbded48-b812-4cad-b2be-2906bb638cd2" />
