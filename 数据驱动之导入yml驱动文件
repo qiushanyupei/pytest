@@ -1,0 +1,8 @@
+@pytest.mark.parametrize("env",yaml.safe_load(open("./env.yml")))#这种导入方式适合导入列表，如果只有字典，env变量被赋值后只会有对应的键，但是yaml.safe_load(open("./env.yml"))是完整的配置文件
+    def test_demo(self,env):
+        if "test" in env:
+            print("这是测试环境")
+            print(env)
+        elif "dev" in env:
+            print("这是开发环境")
+获取值的方法和C++中map类似，即env["test"](键必须要加双引号)
