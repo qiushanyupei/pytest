@@ -8,3 +8,4 @@ class TestWithExcel:<br>
         result = my_add(int(x),int(y))<br>
         assert result == int(expected)<br>
 <img width="806" height="327" alt="image" src="https://github.com/user-attachments/assets/ddbded48-b812-4cad-b2be-2906bb638cd2" />
+转化成n×m的列表后就可以循环做数据驱动了
